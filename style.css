@@ -1,3 +1,54 @@
+/*Remove all padding and margin on the end*/
+*{padding: 0;
+margin: 0;}
+
+/*Navigation bar*/
+.topnav{
+    background-color: #567c8d;
+    overflow: hidden;
+    /*font-size: 1em;*/
+}
+
+.topnav a {
+    float: left;
+    text-align: center;
+    text-decoration: none; /*remove hyperlink underline*/
+    height:30px;
+    padding: 8px 11px;
+    background-color:#567c8d;
+    color: black;
+  }
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #F5EFEB;
+ 
+  }
+
+/*Header Section*/
+.header{
+    background-color: #FFFFFF;
+}
+
+.header.container{
+    display: flex;
+
+}
+
+/*Content Section*/
+body{
+    background-color: #F5EFEB;
+}
+
 .logo{
     height: 10rem;
+}
+
+/*Footer Section*/
+footer{
+    background-color: #567c8d;
 }
