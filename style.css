@@ -60,12 +60,11 @@ font-family: sans-serif;
 }
 
 .my-photo>img{
+    position: absolute;
+    right: 0;
+    max-height: 95vh;
+    overflow: hidden;
     object-fit: cover;
-    height: 100%;
-    position: relative;
-    right: 100%;
-
-    
 }
 
 /*Content Section*/
