@@ -1,20 +1,23 @@
 /*Remove all padding and margin on the end*/
 *{padding: 0;
-margin: 0;}
+margin: 0;
+font-family: sans-serif;
+}
 
 /*Navigation bar*/
 .topnav{
     background-color: #567c8d;
     overflow: hidden;
-    /*font-size: 1em;*/
+    height:5vh;
+    font-size: 1em;
 }
 
 .topnav a {
     float: left;
     text-align: center;
     text-decoration: none; /*remove hyperlink underline*/
-    height:30px;
-    padding: 8px 11px;
+    height:100%;
+    padding: 12px 11px 4px;
     background-color:#567c8d;
     color: black;
   }
@@ -26,21 +29,47 @@ margin: 0;}
 
 .topnav a.active {
     background-color: #F5EFEB;
- 
   }
 
 /*Header Section*/
-.header{
+.header-container{
     background-color: #FFFFFF;
+    height: 95vh;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    overflow: hidden;
+    margin-left: 10%;
 }
 
-.header.container{
+.header-text{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
 
+.header-text>h1{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.my-photo{
+    overflow: hidden;
+}
+
+.my-photo>img{
+    object-fit: cover;
+    height: 100%;
+    position: relative;
+    right: 100%;
+
+    
 }
 
 /*Content Section*/
-body{
+.content{
     background-color: #F5EFEB;
 }
 
