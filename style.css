@@ -48,12 +48,11 @@ font-family: sans-serif;
 }
 
 #header-text{
-    position: absolute;
     height:60px;
-    margin-top: 40rem;
     padding-left: 30px;
-    background-color: #FFFFFF;
+    background-color: #ddd;
     opacity: 80%;
+    position: absolute;
 }
 
 /*
@@ -105,4 +104,35 @@ img{
 /*Footer Section*/
 footer{
     background-color: #567c8d;
+}
+
+@media screen and (max-width: 500px) { 
+    
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #FFFFFF;
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #header-text{
+        height:auto;
+        padding-left: auto;
+        background-color: #ddd;
+        opacity: 100%;
+        position: static;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    #my-photo{
+        object-fit: cover;
+        height: 30%;
+        float: none;
+        border-radius: 50%;
+
+    }
 }
