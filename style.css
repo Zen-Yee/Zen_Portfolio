@@ -8,8 +8,10 @@ font-family: sans-serif;
 .topnav{
     background-color: #567c8d;
     overflow: hidden;
-    height:5vh;
+    height:40px;
+    width: 100%;
     font-size: 1em;
+    position: fixed;
 }
 
 .topnav a {
@@ -32,6 +34,29 @@ font-family: sans-serif;
   }
 
 /*Header Section*/
+.header-container{
+    background-color: #FFFFFF;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#my-photo{
+    object-fit: contain;
+    height: 100%;
+    float: right;
+}
+
+#header-text{
+    position: absolute;
+    height:60px;
+    margin-top: 40rem;
+    padding-left: 30px;
+    background-color: #FFFFFF;
+    opacity: 80%;
+}
+
+/*
 .header-container{
     background-color: #FFFFFF;
     height: 95vh;
@@ -59,13 +84,14 @@ font-family: sans-serif;
     overflow: hidden;
 }
 
-.my-photo>img{
+img{
     position: absolute;
     right: 0;
     max-height: 95vh;
     overflow: hidden;
     object-fit: cover;
 }
+*/
 
 /*Content Section*/
 .content{
