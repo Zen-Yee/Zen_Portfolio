@@ -5,7 +5,7 @@ font-family: sans-serif;
 }
 
 /*-----Header Section--------*/
-.header-container{
+#header-container{
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -46,6 +46,7 @@ font-family: sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100%;
+    overflow: hidden;
 }
 
 /*My photo*/
@@ -60,7 +61,6 @@ font-family: sans-serif;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  overflow: hidden;
 }
 
 #my-photo{
@@ -75,11 +75,10 @@ font-family: sans-serif;
     height: 90%;
     width: 40%;
     border-radius: 500px 500px 0px 0px;
-    display: inline-block;
     background-color:#F5EFEB;
     position: absolute;
+    bottom: 0;
 }
-
 
 /*About Me text*/
 #header-text-grid{
@@ -93,6 +92,10 @@ font-family: sans-serif;
     padding: 30px;    
     box-shadow:20px 20px #F5EFEB;
     color: #F5EFEB;
+}
+
+#header-text>p{
+    text-align: justify;
 }
 
 /*contact section*/
@@ -116,7 +119,7 @@ h2{
 }
 
 .sects{
-    padding: 6% 8% 0;
+    padding: 5% 8% 0;
 }
 
 .content{
@@ -133,6 +136,17 @@ h2{
     height: 10rem;
 }
 
+/*Back to top*/
+#BackTop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size:2em;
+    text-decoration: none; /*remove hyperlink underline*/
+    background-color: #F5EFEB;
+    border-radius: 0.5em;
+    border: 5px solid #2F4156;
+}
 
 /*Footer Section*/
 footer{
@@ -145,3 +159,19 @@ footer{
     align-items: center;
 }
 
+@media screen and (max-width:800px){
+    #header-text{
+        background-color:transparent;
+        padding: 30px;    
+        box-shadow:0px 0px;
+        color: black;
+    }
+
+    h1{
+        color: #567c8d;
+    }
+}
+
+@media screen and (max-width:500px){
+    
+}
