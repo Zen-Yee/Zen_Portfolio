@@ -170,6 +170,16 @@ footer{
     h1{
         color: #567c8d;
     }
+
+    .topnav{
+        background-color: #567c8d;
+        display: flex;
+        height:auto;
+    }
+
+    .topnav a {
+        padding:11px 12px 11px 12px;
+      }
 }
 
 @media screen and (max-width:500px){
