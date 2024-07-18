@@ -4,6 +4,13 @@ margin: 0;
 font-family: sans-serif;
 }
 
+/*-----Header Section--------*/
+.header-container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 /*Navigation bar*/
 .topnav{
     background-color: #567c8d;
@@ -11,7 +18,6 @@ font-family: sans-serif;
     height:40px;
     width: 100%;
     font-size: 1em;
-    position: fixed;
 }
 
 .topnav a {
@@ -19,7 +25,7 @@ font-family: sans-serif;
     text-align: center;
     text-decoration: none; /*remove hyperlink underline*/
     height:100%;
-    padding: 12px 11px 4px;
+    padding:11px 12px 0px 12px;
     background-color:#567c8d;
     color: black;
   }
@@ -33,73 +39,69 @@ font-family: sans-serif;
     background-color: #F5EFEB;
   }
 
-/*Header Section*/
-.header-container{
+/*About Me*/
+#About-Me{
     background-color: #FFFFFF;
-    height: 100vh;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+/*My photo*/
+#Photo-grid{
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #my-photo{
-    object-fit: contain;
-    height: 100%;
-    float: right;
+    height: 50%;
+}
+
+/*About Me text*/
+#header-text-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #header-text{
-    height:60px;
-    padding-left: 30px;
-    background-color: #ddd;
-    opacity: 80%;
-    position: absolute;
+    background-color: #F5EFEB;
+    padding: 30px;
 }
 
-/*
-.header-container{
-    background-color: #FFFFFF;
-    height: 95vh;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    overflow: hidden;
-    margin-left: 10%;
-}
-
-.header-text{
+/*contact section*/
+#contact-container{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+
 }
 
-.header-text>h1{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    overflow: hidden;
+.contact-logo{
+    height: 50px;
 }
-
-.my-photo{
-    overflow: hidden;
-}
-
-img{
-    position: absolute;
-    right: 0;
-    max-height: 95vh;
-    overflow: hidden;
-    object-fit: cover;
-}
-*/
 
 /*Content Section*/
+h2{
+    font-size: 2rem;
+}
+
+
 .content{
     background-color: #F5EFEB;
 }
 
-.logo{
+.skills-logo{
     height: 10rem;
 }
+
+.sects{
+    height: 100vh;
+}
+
 
 /*Footer Section*/
 footer{
