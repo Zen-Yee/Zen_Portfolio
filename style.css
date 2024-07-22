@@ -4,7 +4,7 @@ margin: 0;
 font-family: sans-serif;
 }
 
-/*-----Header Section--------*/
+/*------------Header Section------------*/
 #header-container{
     height: 100vh;
     width: 100%;
@@ -18,6 +18,7 @@ font-family: sans-serif;
     height:40px;
     width: 100%;
     font-size: 1em;
+    display: flex;
 }
 
 .topnav a {
@@ -43,54 +44,24 @@ font-family: sans-serif;
 /*About Me*/
 #About-Me{
     background-color: #c8d9e6;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
     overflow: hidden;
-}
+    height:100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-/*My photo*/
-#Photo-grid{
-    overflow: hidden;
-}
-
-#my-photosec{
-  height: 100%; 
-  width: 100%; 
-  background-color:transparent;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-#my-photo{
-    z-index:1;
-    height: 80%;
-    object-fit: cover;
-    background-color:transparent;
-}
-
-#photo-shadow{
-    z-index: 0;
-    height: 90%;
-    width: 40%;
-    border-radius: 500px 500px 0px 0px;
-    background-color:#F5EFEB;
-    position: absolute;
-    bottom: 0;
 }
 
 /*About Me text*/
 #header-text-grid{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    max-width: 80%;
 }
 
 #header-text{
     background-color:#567c8d;
     padding: 30px;    
-    box-shadow:20px 20px #F5EFEB;
+    box-shadow:20px 20px white;
     color: #F5EFEB;
 }
 
@@ -136,6 +107,12 @@ h2{
     height: 10rem;
 }
 
+
+/*Project section*/
+#Project{
+    padding-bottom: 5%;
+}
+
 /*Back to top*/
 #BackTop{
     position: fixed;
@@ -169,17 +146,18 @@ footer{
 
     h1{
         color: #567c8d;
+        font-size: 1.5em;
     }
 
     .topnav{
-        background-color: #567c8d;
-        display: flex;
         height:auto;
     }
 
     .topnav a {
-        padding:11px 12px 11px 12px;
+        padding:11px 12px;
       }
+
+    
 }
 
 @media screen and (max-width:500px){
