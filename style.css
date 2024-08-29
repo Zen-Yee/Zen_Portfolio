@@ -29,10 +29,7 @@ section{
     background-color: #ddd;
     color: black;
 }
-.navTop a.active {
-    background-color: #ddd;
-    color: black;
-}
+
 #navIcon{
     display: none;
 } 
@@ -88,11 +85,8 @@ h1{
    .navTop a:last-child{
         display: block;
         float: right;
-   }
+    }
 
-}
-
-@media screen and (max-width: 700px) {
     .navTop.responsive {position: relative;}
 
     .navTop.responsive a.icon {
