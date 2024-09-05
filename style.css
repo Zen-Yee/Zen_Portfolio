@@ -1,11 +1,14 @@
 /* || GENERAL STYLES || */
-*{padding: 0; 
+*{
+    padding: 0; 
     margin: 0;
     font-family: sans-serif;
     box-sizing:border-box;
 }
-section{
+
+.section{
     height: 100vh;
+    overflow: hidden;
 }
 
 /* || NAVIGATION BAR || */
@@ -15,6 +18,7 @@ section{
     width: 100%;
     font-size: 1em;
 }
+
 .navTop a {
     float: left;
     text-align: center;
@@ -25,6 +29,7 @@ section{
     color: white;
     display: block;
 }
+
 .navTop a:hover {
     background-color: #ddd;
     color: black;
@@ -35,10 +40,10 @@ section{
 } 
   
 /* || ABOUT ME || */
-#aboutMe{
-    height: 100%;
+.aboutMe{
+    height:calc(100% - 40px);
     width: 100%;
-    padding: 10%;
+    padding: 5%;
     background-color: #c8d9e6;
 }
 
@@ -46,12 +51,12 @@ section{
     padding: 10%;
     height: 100%;
     background-color: #567c8d;
-    box-shadow:20px 20px #f5efeb;
-    text-align: center;
+    text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
+    border: 5px solid white;
 }
 
 h1{
@@ -59,15 +64,24 @@ h1{
     color: white;
 }
 
-.aboutMe-text>p{
-    color: #c8d9e6;
+h2{
     margin-top: 10px;
-    text-align: left;
+    font-size: 1.5em;
+    color: #c8d9e6;
 }
 
-.backClass{
-    display: none;
+
+/* || FOOTER || */
+footer{   
+    background-color:#567c8d;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+
 
 /* || SMALL SCREEN || */
 @media screen and (max-width:700px){

@@ -8,11 +8,14 @@
 </head>
 
 <body>
-  <section class="first"> 
+  <div class="section"> 
 
-   <!--Navigation Bar-->
+    <!--Navigation Bar
+    Only icon hidden in large screen but shown in small screen. 
+    Using Javascript to toggle class "responsive". 
+    -->
     <div class="navTop" id=topnav>
-      <a class="navButton">About Me</a>
+      <a class="navButton">Main</a>
       <a class="navButton" href="#My-Skills">My Skills</a>
       <a class="navButton" href="#Education">Educational Backgound</a>
       <a class="navButton" href="#Experience">Work Experience</a>
@@ -20,31 +23,34 @@
       <a class="icon"><img id="navIcon" src="./Assets/menu.png"></a>
     </div>
 
-    <div id="aboutMe">
-      <div id="aboutMe-container">
+    <!--About Me
+    Flip card on click.
+    BackCard with details ABOUT ME description will shown on click    
+    -->
+    <div class="aboutMe">
+      <div id="aboutMe-container"> 
         <div class="frontCard aboutMe-text">
-          <h1>Hello! <br> I am Qian Hui!</h1>
+          <h1>Hello! <br> I am Zen.</h1>
+          <h2>Web Developer.</h2>
         </div>
+    </div>
+  </div>
+        <!--
 
-        <div class="backClass">
+        <div class="backCard">
           <p>
               I am a self-taught developer searching for opportunity to leverage my skills in real industry 
               environment. My technical skills include HTML5, CSS3, Javascript, Bootstrap and JQuery, and I am
               activaly learning on back-end technologies such as Node.Js and Express.Js. 
               <br>
-              I am actively looking for opportunities to work and colaborate. Feel free to contact me via the 
-              link below:
-              
+              I am looking for opportunities to work and colaborate. Feel free to contact me via the link below:
           </p>
         </div>
       </div>
-
-      
-
     </div>
 
-  </section>
-
+  </div>
+-->
 
   <!--
 
@@ -155,12 +161,11 @@
 
     -->
 
+
+  <footer>
+      <p>Made from scratch by Zen.</p>
+  </footer>
     
-<script  src="./index.js"></script>
+  <script  src="./index.js"></script>
 
 </body>
-
-
-<footer>
-    <p>© 2024 Yee Qian Hui</p>
-</footer>
