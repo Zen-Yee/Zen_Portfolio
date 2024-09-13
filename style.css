@@ -9,6 +9,7 @@
 .section{
     height: 100vh; 
     overflow: hidden;
+    background-color: #c8d9e6;
 }
 
 .hidden{ /*class added for anything that need to be hide*/
@@ -45,21 +46,21 @@
     height:calc(100% - 40px);
     width: 100%;
     padding: 5%;
-    background-color: #c8d9e6;
 }
 
 #aboutMe-container{
     padding: 10%;
     height: 100%;
     background-color: #567c8d;
-    text-align: left;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     border-radius: 50px;
     border: 5px solid white;
 }
 
+/*front card*/
 .frontCard>h1{
     font-size: 3em;
     color: white;
@@ -71,6 +72,7 @@
     color: #c8d9e6;
 }
 
+/*back card*/
 .backCard{
     font-size: 0.7em;
     color: white;
@@ -80,6 +82,22 @@
     position: absolute;
     color: white;
     bottom: 15%;
+}
+
+.contact-container{
+    margin: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-container>img{
+    width: 4em;
+}
+
+/* || MY SKILLS || */
+.skills-logo{
+    height: 5em;
+
 }
 
 /* || FOOTER || */
@@ -115,6 +133,7 @@ footer{
 
     .navTop.responsive a.icon {
       position: absolute;
+      background-color: #567c8d;
       right: 0;
       top: 0;
     }
@@ -122,19 +141,20 @@ footer{
       float: none;
       display: block;
       text-align: left;
+      background-color: #f5efeb;
+      color: #567c8d;
     }
 
-    .navTop a.active {
-        background-color: #567c8d;;
+    .navTop.responsive a:hover,.navTop.responsive>.active{
+        background-color: #567c8d;
         color: white;
     }
-  }
-
+}
 /*Animation*/
 
 /*Fade In Animation for text*/ 
 .fadeIn{
-    animation: fadeInAnimation ease 1s;
+    animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }

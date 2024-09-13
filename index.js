@@ -9,7 +9,7 @@ document.querySelector(".icon").addEventListener("click", function(){
     }
 })
 
-
+/* -------- FLIP CARD --------*/
 const flipBtn=document.querySelector(".btn-aboutMe");
 flipBtn.addEventListener('click',function(){
     FrontC = document.querySelector(".frontCard");
@@ -25,17 +25,3 @@ flipBtn.addEventListener('click',function(){
     }
     
 })
-
-/* -------- FLIP CARD -----------
-const flipBtn=document.getElementsByClassName("btn-aboutMe");
-
-for(var i=0;i<flipBtn.length;i++){
-    flipBtn[i].addEventListener('click',function(){
-       FrontC = document.querySelector(".frontCard");
-       BackC = document.querySelector(".backCard");
-       FrontC.classList.toggle("hidden");
-       BackC.classList.toggle("hidden");
-       flipBtn.innerHTML;
-    });
-}
-*/
