@@ -15,12 +15,12 @@
     Using Javascript to toggle class "responsive". 
     -->
     <div class="navTop" id=topnav>
-      <a class="navButton">Main</a>
+      <a class="navButton">About Me</a>
       <a class="navButton" href="#My-Skills">My Skills</a>
       <a class="navButton" href="#Education">Educational Backgound</a>
       <a class="navButton" href="#Experience">Work Experience</a>
       <a class="navButton" href="#Project">Projects</a>
-      <a class="icon"><img id="navIcon" src="./Assets/menu.png"></a>
+      <a class="icon hidden"><img class="navIcon hidden" src="./Assets/menu.png"></a>
     </div>
 
     <!--About Me
@@ -29,25 +29,38 @@
     -->
     <div class="aboutMe">
       <div id="aboutMe-container"> 
-        <div class="frontCard aboutMe-text">
-          <h1>Hello! <br> I am Zen.</h1>
+        <div class="frontCard aboutMe-text fadeIn">
+          <h1>Hello! <br> I am Qian Hui.</h1>
           <h2>Web Developer.</h2>
         </div>
-    </div>
-  </div>
-        <!--
 
-        <div class="backCard">
+        <div class="backCard fadeIn hidden">
           <p>
-              I am a self-taught developer searching for opportunity to leverage my skills in real industry 
-              environment. My technical skills include HTML5, CSS3, Javascript, Bootstrap and JQuery, and I am
-              activaly learning on back-end technologies such as Node.Js and Express.Js. 
+              I am a self-taught developer searching for opportunity to leverage my skills in real 
+              industry environment. My technical skills include HTML5, CSS3, Javascript, Bootstrap 
+              and JQuery, and I am activaly learning on back-end technologies such as Node.Js and 
+              Express.Js. 
+              <br>
               <br>
               I am looking for opportunities to work and colaborate. Feel free to contact me via the link below:
           </p>
         </div>
+
+        <btn class="btn-aboutMe">About Me</btn>
+
       </div>
     </div>
+  </div>
+
+
+
+
+
+        <!--
+
+        
+      </div>
+    </div>sliding
 
   </div>
 -->
@@ -73,7 +86,7 @@
     </div>
 
     <div class="content">
-      	<div id="My-Skills" class="sects">
+      	<div id="My-Skills" class="sects sliding">
         	<h2 class="sec-header">My Skills</h2>
           <div id="skills-flex">
             <img class="skills-logo" src="./Assets/html_logo.png">
