@@ -16,6 +16,15 @@
     display: none;
 }
 
+.secHeader{
+    font-size: 2em;
+    text-align: center;
+    padding: 5%;
+    width: 100%;
+    background-color: #567c8d;
+    color:#ddd
+}
+
 /* || NAVIGATION BAR || */
 .navTop{
     background-color: #567c8d;
