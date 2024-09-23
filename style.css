@@ -17,9 +17,9 @@
 }
 
 .secHeader{
-    font-size: 2em;
+    font-size: 2rem;
     text-align: center;
-    padding: 5%;
+    padding: 1rem;
     width: 100%;
     background-color: #567c8d;
     color:#ddd
@@ -60,14 +60,17 @@
 #aboutMe-container{
     padding: 10%;
     height: 100%;
+    border-radius: 50px;
+    border: 5px solid white;
     background-color: #567c8d;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: center;
-    border-radius: 50px;
-    border: 5px solid white;
+
 }
+
 
 /*front card*/
 .frontCard>h1{
@@ -87,10 +90,12 @@
     color: white;
 }
 
+/*About Me button*/
 .btn-aboutMe{
-    position: absolute;
     color: white;
-    bottom: 5em;
+    position: absolute;
+    bottom: 20%;
+
 }
 
 .contact-container{
@@ -104,10 +109,23 @@
 }
 
 /* || MY SKILLS || */
+#My-Skills{
+    height: auto;
+}
+
 .skills-logo{
-    height: 5em;
+    height: 8em;
+    margin: 8%;
 
 }
+
+#skills-container{
+    min-width: 100%;
+    white-space: nowrap;
+}
+
+/* || WORK EXPERIENCES || */
+
 
 /* || FOOTER || */
 footer{   
@@ -117,6 +135,17 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*Back to top*/
+#BackTop{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size:2em;
+    text-decoration: none; /*remove hyperlink underline*/
+
+    border-radius: 0.5em;
 }
 
 
@@ -171,4 +200,15 @@ footer{
 @keyframes fadeInAnimation {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+
+.sliding{
+    animation: slidingAnimation linear 7s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes slidingAnimation{
+    0%{transform: translate(-100%)}
+    100%{transform: translate(100%);}
 }
