@@ -93,9 +93,7 @@
 /*About Me button*/
 .btn-aboutMe{
     color: white;
-    position: absolute;
-    bottom: 20%;
-
+    margin-top: 10%;
 }
 
 .contact-container{
@@ -116,7 +114,6 @@
 .skills-logo{
     height: 8em;
     margin: 8%;
-
 }
 
 #skills-container{
@@ -126,6 +123,30 @@
 
 /* || WORK EXPERIENCES || */
 
+
+/* || PROJECTS || */
+.slideContainer{
+    margin: 8%;
+    background-color: white;
+}
+
+.slide{
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    height: 10%;
+}
+
+.slide>img{
+    object-fit: cover;
+    height:10%;
+    width:100%;
+}
+
+.slideDescription{
+    height:100%;
+    width:100%;
+    background-color: #567c8d;
+}
 
 /* || FOOTER || */
 footer{   
@@ -192,7 +213,7 @@ footer{
 
 /*Fade In Animation for text*/ 
 .fadeIn{
-    animation: fadeInAnimation ease 3s;
+    animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }

@@ -9,6 +9,8 @@ document.querySelector(".icon").addEventListener("click", function(){
     }
 })
 
+
+
 /* -------- FLIP CARD --------*/
 const flipBtn=document.querySelector(".btn-aboutMe");
 flipBtn.addEventListener('click',function(){

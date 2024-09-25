@@ -45,9 +45,9 @@
               I am looking for opportunities to work and colaborate. Feel free to contact me via the link below:
           </p>
           <div class="contact-container">
-            <img src="./Assets/github logo.png">
-            <img src="./Assets/linkedin logo.png">
-            <img src="./Assets/mail_icon.png">
+            <img src="./Assets/github logo.png"> <!--placeholder to add link-->
+            <img src="./Assets/linkedin logo.png"> <!--placeholder to add link-->
+            <img src="./Assets/mail_icon.png"> <!--placeholder to add link-->
           </div>
           
         </div>
@@ -59,7 +59,7 @@
   </div>
 
   <div class="section" id="My-Skills">
-    <h2 class="secHeader">My Skills</h2>
+    <h2 class="secHeader">My Skills</h2><!--Placeholder for more skills:Nodejs/react/SQL/photoshop etc-->
     <div id="skills-container" class="sliding">
       <img class="skills-logo" src="./Assets/html_logo.png">
       <img class="skills-logo" src="./Assets/css_logo.png">
@@ -70,12 +70,17 @@
   <div class="section" id="Education">
     <h2 class="secHeader">Educational Background</h2>
     <div>
-
+      <h3>Bachelor of Manufacturing Engineering with Management, Universiti Sains Malaysia (2018 - 2022)</h3>
+          <ul>
+            <li>Provide foundation in Manufacturing Technology, Product Design, Industrial Engineering, Mechatronics, Machine Vision, Project Management, Automatic Control etc.</li>
+            <li>CGPA 3.61.</li>
+          </ul><br>
+          <!--Placeholder for secondary school-->
     </div>
   </div>
 
   <div class="section" id="Experience">
-    <h2 class="secHeader">Work Experiences</h2>
+    <h2 class="secHeader">Work Experiences</h2><!--To be made into timeline layout-->
     <div>
       <ul>
         <li>
@@ -115,136 +120,34 @@
 
   <div class="section" id="Project">
     <h2 class="secHeader">Projects</h2>
-    <div>
+    <div class="slideContainer">
+      <btn>Back</btn> 
+      <div class="slide"> <!--Slide Number 1-->
+        <img src="./Assets/IMG_5099.JPG">
+        <div class="slideDescription">
+          <h3>Title 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <!--Place holder 2 row grid, 2fr 1 fr, top img, bottom description-->
+      </div>
 
+      <div class="slide hidden"> <!--Slide Number 2-->
+         <!--Place holder 2 row grid, 2fr 1 fr, top img, bottom description-->
+      </div>
+
+      <div class="slide hidden"> <!--Slide Number 3-->
+         <!--Place holder 2 row grid, 2fr 1 fr, top img, bottom description-->
+      </div>
+      <btn>Next</btn>
+      <!--Event listener btn, slidecount +1 (Array), Play slide animation, 
+      hide previous slide and show next-->
     </div>
   </div>
 
   <a id="BackTop" href="#topnav">&#128285;</a>
 
-
-
-        <!--
-
-        
-      </div>
-    </div>sliding
-
-  </div>
--->
-
-  <!--
-
-  <div id="header-container"> 
-    
-
-    <div id="About-Me">
-      <div id="header-text-grid">
-        <div id="header-text">
-          <h1>Yee Qian Hui (Zen)</h1><br>
-          <p>
-            Self-motivated MDM Analyst with a year experience in VBA programming. Proficient in HTML and CSS with knowledge on error-proof design to ensure data accuracy. Seeking opportunity to enhance programming skills in industry as a developer.
-          </p><br>
-          <div id="contact-container">
-            <a href="https://github.com/Zen-Yee"><img class="contact-logo" src="./Assets/github logo.png"></a>
-            <a href="https://www.linkedin.com/in/qian-hui-yee-66a394205/"><img class="contact-logo" src="./Assets/linkedin logo.png"></a>
-          </div>
-        </div>
-    </div>
-    </div>
-
-    <div class="content">
-      	<div id="My-Skills" class="sects sliding">
-        	<h2 class="sec-header">My Skills</h2>
-          <div id="skills-flex">
-            <img class="skills-logo" src="./Assets/html_logo.png">
-            <img class="skills-logo" src="./Assets/css_logo.png">
-            <img class="skills-logo" src="./Assets/JS_logo.png">
-          </div>
-        </div>
-
-        <div id="Education" class="sects">
-        	<h2 >Educational Background</h2><br>
-          <h3>Bachelor of Manufacturing Engineering with Management, Universiti Sains Malaysia (2018 - 2022)</h3>
-          <ul>
-            <li>Provide foundation in Manufacturing Technology, Product Design, Industrial Engineering, Mechatronics, Machine Vision, Project Management, Automatic Control etc.</li>
-            <li>CGPA 3.61.</li>
-          </ul><br>
-        </div>
-
-        <div id="Experience" class="sects">
-          <h2>Work Experience</h2><br>
-          <ul>
-            <li>
-              <h3>Steelcase Office Solutions (M) Sdn Bhd |  Master Database Maintenance (MDM) Analyst</h3>
-              <p>2023 May–Present</p>
-              <ul>
-                <li>Managed the entry, maintenance, and validation of master data records, including customer, vendor, and material data.</li>
-                <li>Provided ongoing support and troubleshooting for data-related issues and queries.</li>
-                <li>Documented standard operating procedures (SOPs) for master data maintenance.</li>
-                <li>Developed and implemented scripts to automate data compilation, validation and entry into SAP system from multiple request form via Microsoft VBA, reducing manual effort and error due to human error.</li>
-              </ul>
-            </li><br>
-            
-            <li>
-              <h3>Mechanical Design Engineer | Greatech Integration (M) Sdn Bhd</h3>
-              <p>2022 Nov–2023 May</p>
-              <ul>
-                <li>Created detailed CAD models and engineering drawings using SolidWorks. </li>
-                <li>Developed innovative design solutions for custom machinery and automated systems.</li>
-                <li>Translated customer’s requirements into design specification, evaluate design feasibility and provide technical expertise to meet customer’s requirements./li>
-              </ul>
-            </li><br>
-
-            <li>
-              <h3>System Development Intern | Malaysia Airlines Berhad (MAB) </h3>
-              <p>2021 Aug–2022 Oct</p>
-              <ul>
-                <li>Designed and developed data collection form via Microsoft VBA for flight safety audit project, especially on error-proof and user-friendly design to ensure data accuracy.</li>
-                <li>Participated in usability testing to gather feedback and improve user experience. </li>
-                <li>Participated in team meetings to discuss progress, challenges, and solutions.</li>
-                <li>Assisted supervisor in establishing connections between data collection tools (Microsoft Excel) and relational databases (Microsoft Access)</li>
-              </ul>
-            </li><br>
-          </ul> 
-
-        </div>
-
-      <div id="Project" class="sects">  
-        <h2>Projects</h2><br>
-          <div class="card">
-            <img src="./Assets/Personalsite.png" alt="Personal Site Screenshot">
-            <div class="cardcontainer">
-              <h3>Personal Site</h3>
-              <h4>HTML, CSS, Javascript</h4>
-              <br>
-              <div id="card_Descrption">
-                <p>I started to build this site as a Capstone Project from the Udemy Course "The Complete 2024 Web Development Bootcamp" by Angela Yu.
-                  This is the first project I do without any instructions, leading me to apply what I had learnt from the course, and explore more to make the 
-                  website looks great and user friendly. 
-                </p>
-                <br>
-                <h4>Key achievements</h4>
-                <ul>
-                  <li>Understand the use of colour palette</li>
-                  <li>Understand different units (em, rem, px , %) for sizing</li>
-                  <li>Understand properties for flexbox and grid</li>
-                </ul>
-              </div> 
-            </div>
-        </div>
-
-
-      </div>
-    </div>
-  
-    <a id="BackTop" href="#header-container">&#128285;</a>
-
-    -->
-
-
   <footer>
-      <p>Made from scratch by Zen.</p>
+      <p>Made from scratch by Qian Hui.</p>
   </footer>
     
   <script  src="./index.js"></script>
