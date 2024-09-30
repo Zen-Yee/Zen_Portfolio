@@ -59,7 +59,10 @@
   </div>
 
   <div class="section" id="My-Skills">
-    <h2 class="secHeader">My Skills</h2><!--Placeholder for more skills:Nodejs/react/SQL/photoshop etc-->
+    <div class="secHeader">
+      <p>My Skills</p><!--Placeholder for more skills:Nodejs/react/SQL/photoshop etc-->
+    </div>
+    
     <div id="skills-container" class="sliding">
       <img class="skills-logo" src="./Assets/html_logo.png">
       <img class="skills-logo" src="./Assets/css_logo.png">
@@ -68,7 +71,10 @@
   </div>
 
   <div class="section" id="Education">
-    <h2 class="secHeader">Educational Background</h2>
+    <div class="secHeader">
+      <p>Educational Background</p>
+    </div>
+    
     <div>
       <h3>Bachelor of Manufacturing Engineering with Management, Universiti Sains Malaysia (2018 - 2022)</h3>
           <ul>
@@ -80,7 +86,10 @@
   </div>
 
   <div class="section" id="Experience">
-    <h2 class="secHeader">Work Experiences</h2><!--To be made into timeline layout-->
+    <div class="secHeader">
+      <p>Work Experiences</p>
+    </div>
+    
     <div>
       <ul>
         <li>
@@ -119,28 +128,27 @@
   </div>
 
   <div class="section" id="Project">
-    <h2 class="secHeader">Projects</h2>
+    <div class="secHeader">
+      <p>Projects</p>
+    </div>
+
     <div class="slideContainer">
-      <btn>Back</btn> 
+      <btn class="button backbtn">Back</btn> 
+      <btn class="button nextbtn">Next</btn>
+   
       <div class="slide"> <!--Slide Number 1-->
         <img src="./Assets/IMG_5099.JPG">
         <div class="slideDescription">
-          <h3>Title 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Title 1</p>
         </div>
-        <!--Place holder 2 row grid, 2fr 1 fr, top img, bottom description-->
       </div>
 
       <div class="slide hidden"> <!--Slide Number 2-->
-         <!--Place holder 2 row grid, 2fr 1 fr, top img, bottom description-->
       </div>
 
       <div class="slide hidden"> <!--Slide Number 3-->
-         <!--Place holder 2 row grid, 2fr 1 fr, top img, bottom description-->
       </div>
-      <btn>Next</btn>
-      <!--Event listener btn, slidecount +1 (Array), Play slide animation, 
-      hide previous slide and show next-->
+      
     </div>
   </div>
 
