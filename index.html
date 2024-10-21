@@ -17,8 +17,7 @@
     <div class="navTop" id=topnav>
       <a class="navButton active">About Me</a>
       <a class="navButton" href="#My-Skills">My Skills</a>
-      <a class="navButton" href="#Education">Educational Backgound</a>
-      <a class="navButton" href="#Experience">Work Experience</a>
+      <a class="navButton" href="#Experience">Experience</a>
       <a class="navButton" href="#Project">Projects</a>
       <a class="icon hidden"><img class="navIcon hidden" src="./Assets/menu.png"></a>
     </div>
@@ -31,7 +30,7 @@
       <div id="aboutMe-container"> 
         <div class="frontCard aboutMeCard fadeIn">
           <h1>Hello! <br> I am Qian Hui.</h1>
-          <h2>Web Developer.</h2>
+          <p>Web Developer.</p>
         </div>
 
         <div class="backCard aboutMeCard fadeIn hidden">
@@ -60,7 +59,7 @@
 
   <div class="section" id="My-Skills">
     <div class="secHeader">
-      <p>My Skills</p><!--Placeholder for more skills:Nodejs/react/SQL/photoshop etc-->
+      <h2>My Skills</h2><!--Placeholder for more skills:Nodejs/react/SQL/photoshop etc-->
     </div>
     
     <div id="skills-container" class="sliding">
@@ -70,29 +69,21 @@
     </div>
   </div>
 
-  <div class="section" id="Education">
-    <div class="secHeader">
-      <p>Educational Background</p>
-    </div>
-    
-    <div>
-      <h3>Bachelor of Manufacturing Engineering with Management, Universiti Sains Malaysia (2018 - 2022)</h3>
-          <ul>
-            <li>Provide foundation in Manufacturing Technology, Product Design, Industrial Engineering, Mechatronics, Machine Vision, Project Management, Automatic Control etc.</li>
-            <li>CGPA 3.61.</li>
-          </ul><br>
-          <!--Placeholder for secondary school-->
-    </div>
-  </div>
-
   <div class="section" id="Experience">
     <div class="secHeader">
-      <p>Work Experiences</p>
+      <h2>Education and Experience</h2>
     </div>
-    
-    <div>
-      <ul>
-        <li>
+
+    <div class="timeline-container">
+
+      <div class="timeline">
+        <div class="line"></div>
+      </div>
+      
+      <div class="timeline-cardcontainer">
+  
+        <!--First-->
+        <div class="timeline-card">
           <h3>Steelcase Office Solutions (M) Sdn Bhd |  Master Database Maintenance (MDM) Analyst</h3>
           <p>2023 May–Present</p>
           <ul>
@@ -101,9 +92,10 @@
             <li>Documented standard operating procedures (SOPs) for master data maintenance.</li>
             <li>Developed and implemented scripts to automate data compilation, validation and entry into SAP system from multiple request form via Microsoft VBA, reducing manual effort and error due to human error.</li>
           </ul>
-        </li><br>
-        
-        <li>
+        </div>
+  
+         <!--Second-->
+        <div class="timeline-card">
           <h3>Mechanical Design Engineer | Greatech Integration (M) Sdn Bhd</h3>
           <p>2022 Nov–2023 May</p>
           <ul>
@@ -111,10 +103,11 @@
             <li>Developed innovative design solutions for custom machinery and automated systems.</li>
             <li>Translated customer’s requirements into design specification, evaluate design feasibility and provide technical expertise to meet customer’s requirements./li>
           </ul>
-        </li><br>
-
-        <li>
-          <h3>System Development Intern | Malaysia Airlines Berhad (MAB) </h3>
+        </div>
+  
+         <!--Third-->
+        <div class="timeline-card">
+          <h3>System Development Intern | Malaysia Airlines Berhad (MAB)</h3>
           <p>2021 Aug–2022 Oct</p>
           <ul>
             <li>Designed and developed data collection form via Microsoft VBA for flight safety audit project, especially on error-proof and user-friendly design to ensure data accuracy.</li>
@@ -122,33 +115,27 @@
             <li>Participated in team meetings to discuss progress, challenges, and solutions.</li>
             <li>Assisted supervisor in establishing connections between data collection tools (Microsoft Excel) and relational databases (Microsoft Access)</li>
           </ul>
-        </li><br>
-      </ul> 
+        </div>
+  
+         <!--Forth-->
+        <div class="timeline-card">
+          <h3>Bachelor of Manufacturing Engineering with Management, Universiti Sains Malaysia (2018 - 2022)</h3>
+          <p>2018-2022</p>
+          <ul>
+            <li>Provide foundation in Manufacturing Technology, Product Design, Industrial Engineering, Mechatronics, Machine Vision, Project Management, Automatic Control etc.</li>
+            <li>CGPA 3.61.</li>
+          </ul>
+        </div>
+  
+      </div>
+
     </div>
+    
   </div>
 
   <div class="section" id="Project">
     <div class="secHeader">
-      <p>Projects</p>
-    </div>
-
-    <div class="slideContainer">
-      <btn class="button backbtn">Back</btn> 
-      <btn class="button nextbtn">Next</btn>
-   
-      <div class="slide"> <!--Slide Number 1-->
-        <img src="./Assets/IMG_5099.JPG">
-        <div class="slideDescription">
-          <p>Title 1</p>
-        </div>
-      </div>
-
-      <div class="slide hidden"> <!--Slide Number 2-->
-      </div>
-
-      <div class="slide hidden"> <!--Slide Number 3-->
-      </div>
-      
+      <h2>Projects</h2>
     </div>
   </div>
 

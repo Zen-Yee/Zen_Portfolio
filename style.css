@@ -25,7 +25,7 @@
     align-items: center;
 }
 
-.secHeader>p{
+.secHeader>h2{
     color:#ddd;
     margin:0;
 }
@@ -84,7 +84,7 @@
     color: white;
 } 
 
-.frontCard>h2,p{
+.frontCard>p{
     margin-top: 10px;
     font-size: 1.5em;
     color: #c8d9e6;
@@ -112,6 +112,11 @@
     width: 4em;
 }
 
+.backCard>p{
+    font-size: 1.5em;
+    color: #c8d9e6;
+}
+
 /* || MY SKILLS || */
 #My-Skills{
     height: auto;
@@ -128,51 +133,42 @@
 }
 
 /* || WORK EXPERIENCES || */
-
-
-/* || PROJECTS || */
-#Project{
+#Experience{
     height: auto;
 }
 
-.slideContainer{
-    margin: 5%;
-    border-radius: 10px;
-    overflow: hidden;
+.timeline-container{
+    display:flex;
+    width:100%;
 }
 
-.slide{
-    background-color: white;
-}
-
-.slide>img{
-    object-fit: cover;
-    max-width: 100%;
-}
-
-.slideDescription{
-    background-color: #567c8d;
+.line{
+    width: 20px;
     height: 100%;
-    text-align: center;
-    display: none;
-
+    margin: 20px 60px;
+    background-color: #567c8d;
 }
 
-.slideContainer>.button{
-    display: none;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    position: relative;
-    top: 10px;
-    width: auto;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+.timeline-cardcontainer{
+    height: auto;
+    margin: 5%;
 }
+
+.timeline-card{
+    background-color: #f5efeb;
+    padding: 5%;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: #567c8d;
+}
+
+.timeline-card::before{
+    content: '  ';
+}
+
+
+/* || PROJECTS || */
+
 
 /* || FOOTER || */
 footer{   
