@@ -193,12 +193,13 @@
 
 .slide{
     margin:2% 5%;
-    background-color: brown;
+    height: 80%;
+    border-radius: 50px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 80%;
-    overflow: hidden;
-    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .slideimg{
@@ -214,6 +215,10 @@
     background-color:#f5efeb;
     padding: 2%;
     text-align: center;
+}
+
+.slideDescription>*{
+    margin-bottom: 2%;
 }
 
 
