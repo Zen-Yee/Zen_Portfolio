@@ -7,159 +7,160 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
-  <div class="section"> 
+<body class="back-yellow">
+  <!--Screen container-->
+  <div class="container"> 
 
-    <!--Navigation Bar
-    Only icon hidden in large screen but shown in small screen. 
-    Using Javascript to toggle class "responsive". 
-    -->
-    <div class="navTop" id=topnav>
-      <a class="navButton active">About Me</a>
-      <a class="navButton" href="#My-Skills">My Skills</a>
-      <a class="navButton" href="#Experience">Experience</a>
+    <!--Navigation Bar-->
+    <div class="navTop back-green" id="topnav">
+      <a class="navButton active">Zen Yee</a>
+      <a class="navButton" href="#AboutMe">About Me</a>
+      <a class="navButton" href="#MySkills">My Skills</a>
+      <a class="navButton" href="#Experiences">Experiences</a>
       <a class="navButton" href="#Project">Projects</a>
       <a class="icon hidden"><img class="navIcon hidden" src="./Assets/menu.png"></a>
     </div>
 
-    <!--About Me
-    Flip card on click.
-    BackCard with details ABOUT ME description will shown on click    
-    -->
-    <div class="aboutMe">
-      <div id="aboutMe-container"> 
-        <div class="frontCard aboutMeCard fadeIn">
-          <h1>Hello! <br> I am Qian Hui.</h1>
-          <p>Web Developer.</p>
+    <!--Main Page-->
+    <section>
+      <div class="MainPage Tabs">
+          <h1 class="MainTitle">Hi,<br>I am Qian Hui (Zen).</h1>
+          <div class="MainText">
+            <p class="animate-AppearRight">Web Developer</p>
+            <div class="MainText-block back-purple animate-AppearLeft"></div>
+          </div>
+      </div>
+    </section>
+
+    <!--About Me-->
+    <section>
+      <div class="AboutMe back-orange Tabs">
+        <div class="AboutMe-Photo" id="AboutMe">
+            <img class="Me-Photo" src="./Assets/IMG_5099.JPG">
+            <!--Placeholder for img-->
         </div>
 
-        <div class="backCard aboutMeCard fadeIn hidden">
+        <div class="AboutMe-Text">
+          <h1 class="AboutMe-Title sec-Title">About Me</h1>
           <p>
-              I am a self-taught developer searching for opportunity to leverage my skills in real 
-              industry environment. My technical skills include HTML5, CSS3, Javascript, Bootstrap, 
-              JQuery and Node.js etc. I am also exploring on Express.Js and
-              <br>
-              <br>
-              I am looking for opportunities to work and colaborate. Feel free to contact me via the link below:
+          I am a self-taught developer searching for opportunity to leverage my skills in real 
+          industry environment. My technical skills include HTML5, CSS3, Javascript, Bootstrap, 
+          JQuery, Node.js and Express.js etc.
+          <br>
+          <br>
+          I am looking for opportunities to work and colaborate. Feel free to contact me via the 
+          link below:
           </p>
-          <div class="contact-container">
+        
+          <div class="AboutMe-Contact">
             <a href="https://github.com/Zen-Yee"><img src="./Assets/github logo.png"></a>
             <a href="www.linkedin.com/in/qian-hui-yee-66a394205"><img src="./Assets/linkedin logo.png"></a> 
             <!--<img src="./Assets/mail_icon.png"> -->
+            <!--Download Resume Link-->
           </div>
-          
-        </div>
 
-        <btn class="btn-aboutMe">About Me</btn>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="section" id="My-Skills">
-    <div class="secHeader">
-      <h2>My Skills</h2><!--Placeholder for more skills:Nodejs/react/SQL/photoshop etc-->
-    </div>
-    
-    <div id="skills-container" class="sliding">
-      <img class="skills-logo" src="./Assets/html_logo.png">
-      <img class="skills-logo" src="./Assets/css_logo.png">
-      <img class="skills-logo" src="./Assets/JS_logo.png">
-    </div>
-  </div>
-
-  <div class="section" id="Experience">
-
-    <div class="secHeader">
-      <h2>Education and Experience</h2>
-    </div>
-
-    <div class="timeline-container">
-
-        <ul class="timeline-card">
-
-          <!--First-->
-          <li>
-            <div class="position">Steelcase Office Solutions (M) Sdn Bhd |  Master Database Maintenance (MDM) Analyst</div>
-              <p>2023 May–Present</p>
-              <ul>
-                <li>Managed the entry, maintenance, and validation of master data records, including customer, vendor, and material data.</li>
-                <li>Provided ongoing support and troubleshooting for data-related issues and queries.</li>
-                <li>Documented standard operating procedures (SOPs) for master data maintenance.</li>
-                <li>Developed and implemented scripts to automate data compilation, validation and entry into SAP system from multiple request form via Microsoft VBA, reducing manual effort and error due to human error.</li>
-              </ul>
-          </li>
-
-          <!--Second-->
-          <li>
-            <div class="position">Mechanical Design Engineer | Greatech Integration (M) Sdn Bhd</div>
-              <p>2022 Nov–2023 May</p>
-              <ul>
-                <li>Created detailed CAD models and engineering drawings using SolidWorks. </li>
-                <li>Developed innovative design solutions for custom machinery and automated systems.</li>
-                <li>Translated customer’s requirements into design specification, evaluate design feasibility and provide technical expertise to meet customer’s requirements./li>
-              </ul>
-          </li>
-
-          <!--Third-->
-          <li>
-            <div class="position">System Development Intern | Malaysia Airlines Berhad (MAB)</div>
-              <p>2021 Aug–2021 Sep</p>
-              <ul>
-                <li>Designed and developed data collection form via Microsoft VBA for flight safety audit project, especially on error-proof and user-friendly design to ensure data accuracy.</li>
-                <li>Participated in usability testing to gather feedback and improve user experience. </li>
-                <li>Participated in team meetings to discuss progress, challenges, and solutions.</li>
-                <li>Assisted supervisor in establishing connections between data collection tools (Microsoft Excel) and relational databases (Microsoft Access)</li>
-              </ul>
-          </li>
-
-          <!--Forth-->
-          <li>
-            <div class="position">Bachelor of Manufacturing Engineering with Management, Universiti Sains Malaysia (2018 - 2022)</div>
-              <p>2018-2022</p>
-              <ul>
-                <li>Provide foundation in Manufacturing Technology, Product Design, Industrial Engineering, Mechatronics, Machine Vision, Project Management, Automatic Control etc.</li>
-                <li>CGPA 3.61.</li>
-              </ul>
-          </li>
-
-        </ul>
-    </div> 
-
-  <div class="section" id="Project">
-    <div class="secHeader">
-      <h2>Projects</h2>
-    </div>
-
-    <div class="slide-container">
-      <div class="slide">
-        <div class="slideimg"><img src="./Project/Basic Calculator/BasicCalculator.png"></div>
-        <div class="slideDescription">
-            <h3>Basic Calculator</h3>
-            <P>A basic calculator built purely with Html, CSS and Javascript that can perform basic calcution such as add, subtract, multiply and divide. </P>
-            <a href="./Project/Basic Calculator/index.html">Live Site</a> <a href="https://github.com/Zen-Yee/Zen_Portfolio/tree/main/Project/Basic%20Calculator">GitHub</a>
         </div>
       </div>
+    </section>
 
+    <!--My Skills-->
+    <section>
+      <div class="MySkills Tabs" id="MySkills">
+        <h1 class="Skill-Title sec-Title">My Skills</h1>
+        <div class="Skill-Container">
+          <img class="logo" src="./Assets/html_logo.png">
+          <img class="logo" src="./Assets/css_logo.png">
+          <img class="logo" src="./Assets/JS_logo.png">
+          <img class="logo" src="./Assets/Bootstrap_logo.png">
+          <img class="logo" src="./Assets/JQuery_logo.png">
+          <img class="logo" src="./Assets/Node_logo.png">
+          <img class="logo" src="./Assets/Express_logo.png">
+        </div>
+      </div>
+    </section>
+
+    <!--Experiences-->
+    <section>
+      <div class="Experiences Tabs back-green" id="Experiences">
+        <h1 class="Exp-Title sec-Title">Education & Work Experiences</h1>
+        <div class="timeline-container">
+
+          <ul class="timeline-card">
   
+            <!--First-->
+            <li>
+              <div class="position">Steelcase Office Solutions (M) Sdn Bhd |  Master Database Maintenance (MDM) Analyst</div>
+                <p>2023 May–Present</p>
+                <ul>
+                  <li>Managed the entry, maintenance, and validation of master data records, including customer, vendor, and material data.</li>
+                  <li>Provided ongoing support and troubleshooting for data-related issues and queries.</li>
+                  <li>Documented standard operating procedures (SOPs) for master data maintenance.</li>
+                  <li>Developed and implemented scripts to automate data compilation, validation and entry into SAP system from multiple request form via Microsoft VBA, reducing manual effort and error due to human error.</li>
+                </ul>
+            </li>
+  
+            <!--Second-->
+            <li>
+              <div class="position">Mechanical Design Engineer | Greatech Integration (M) Sdn Bhd</div>
+                <p>2022 Nov–2023 May</p>
+                <ul>
+                  <li>Created detailed CAD models and engineering drawings using SolidWorks. </li>
+                  <li>Developed innovative design solutions for custom machinery and automated systems.</li>
+                  <li>Translated customer’s requirements into design specification, evaluate design feasibility and provide technical expertise to meet customer’s requirements./li>
+                </ul>
+            </li>
+  
+            <!--Third-->
+            <li>
+              <div class="position">System Development Intern | Malaysia Airlines Berhad (MAB)</div>
+                <p>2021 Aug–2021 Sep</p>
+                <ul>
+                  <li>Designed and developed data collection form via Microsoft VBA for flight safety audit project, especially on error-proof and user-friendly design to ensure data accuracy.</li>
+                  <li>Participated in usability testing to gather feedback and improve user experience. </li>
+                  <li>Participated in team meetings to discuss progress, challenges, and solutions.</li>
+                  <li>Assisted supervisor in establishing connections between data collection tools (Microsoft Excel) and relational databases (Microsoft Access)</li>
+                </ul>
+            </li>
+  
+            <!--Forth-->
+            <li>
+              <div class="position">Bachelor of Manufacturing Engineering with Management, Universiti Sains Malaysia (2018 - 2022)</div>
+                <p>2018-2022</p>
+                <ul>
+                  <li>Provide foundation in Manufacturing Technology, Product Design, Industrial Engineering, Mechatronics, Machine Vision, Project Management, Automatic Control etc.</li>
+                  <li>CGPA 3.61.</li>
+                </ul>
+            </li>
+  
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    </div>
+    <!--Project-->
+    <section>
+      <div class="Project Tabs" id="Project">
+        <h1 class="Project-Title sec-Title">Projects</h1>
+
+        <div class="slide-container">
+          <div class="slide">
+            <div class="slideimg"><img src="./Project/Basic Calculator/BasicCalculator.png"></div>
+            <div class="slideDescription">
+                <h3>Basic Calculator</h3>
+                <P>A basic calculator built purely with Html, CSS and Javascript that can perform basic calcution such as add, subtract, multiply and divide. </P>
+                <a href="./Project/Basic Calculator/index.html">Live Site</a> <a href="https://github.com/Zen-Yee/Zen_Portfolio/tree/main/Project/Basic%20Calculator">GitHub</a>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="back-green">
+      <p>Made from scratch by Zen!</p>
+    </footer>
 
   </div>
 
-  <a id="BackTop" href="#topnav">&#128285;</a>
-
-  <footer>
-    <div>
-      <div><p>Made from scratch by Qian Hui.</p></div>
-      <div class="hidden">
-        <h2>Contact Me</h2>
-        
-      </div>
-    </div>
-
-  </footer>
-    
-  <script  src="./index.js"></script>
-
+  <script src="./index.js"></script>
 </body>
