@@ -203,6 +203,10 @@ body{
   }
 
 /* || PROJECTS || */
+.Project{
+    overflow: hidden;
+}
+
 .Project-Title{
     text-align: right;
     width: 100%;
