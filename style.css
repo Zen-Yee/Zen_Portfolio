@@ -104,6 +104,7 @@ body{
     object-fit: cover;
     max-width: 95%;
     border-radius: 10%;
+    background-color: #FFE6A5;
 }
 
 .AboutMe-Text{
